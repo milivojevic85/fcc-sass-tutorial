@@ -416,9 +416,72 @@ nav ul li:nth-child(4) {
   font-size: 1.5rem;
 }
 
+.contact-list span {
+  color: #ff652f;
+  display: block;
+}
+
 .contact .social-icons {
   position: initial;
   margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  nav {
+    visibility: visible;
+  }
+  nav ul {
+    display: block;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    height: 100%;
+    background-color: transparent;
+    text-align: right;
+  }
+  nav ul li {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  nav ul li a {
+    font-size: 1.3rem;
+  }
+  .about .bio div {
+    font-size: 1.3rem;
+  }
+  .projects .bio {
+    height: 40vh;
+  }
+  .projects .bio h1 {
+    font-size: 3rem;
+  }
+  .projects-items {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .projects-items {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .contact-list {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .projects .bio {
+    height: 50vh;
+  }
 }
 
 body {
