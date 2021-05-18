@@ -1,0 +1,117 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 'resets'; */
+body {
+  background-color: #272727;
+  color: #fff;
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.main p {
+  font-weight: 500;
+}
+
+.main .main-paragraph1, .main .main-paragraph2 {
+  font-weight: 700;
+}
+
+.main .main-paragraph1:hover, .main .main-paragraph2:hover {
+  color: #fa278f;
+}
+
+.main .main-paragraph2:hover {
+  color: #ff652f;
+}
+
+@media (max-width: 1199px) {
+  .main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (max-width: 991px) {
+  .main {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 70%;
+  margin: auto;
+}
+
+.other .other-paragraph {
+  font-weight: 500;
+}
+
+.other .other-paragraph:hover {
+  color: #ff652f;
+}
+
+@media (max-width: 767px) {
+  .other {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.light {
+  background-color: white;
+  color: #1a1a1a;
+}
+/*# sourceMappingURL=main.css.map */
