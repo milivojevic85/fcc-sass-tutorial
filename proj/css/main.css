@@ -187,6 +187,240 @@ nav ul li:nth-child(4) {
           transition-delay: 0.55s;
 }
 
+.about {
+  padding-bottom: 2rem;
+}
+
+.about .bio {
+  height: 50vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg);
+  background-image: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg);
+  background-position: center top;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.about .bio p {
+  margin-bottom: 2rem;
+}
+
+.about .bio div {
+  width: 80%;
+  text-align: center;
+}
+
+.about .bio div h2 {
+  padding-bottom: 1rem;
+}
+
+.about .jobs {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.about .jobs div {
+  background-color: #414141;
+  padding: 0.5rem;
+  border-bottom: 5px solid #ff652f;
+}
+
+.about .jobs div h2, .about .jobs div h3 {
+  margin: 0.5rem 0;
+}
+
+.about .jobs div h6 {
+  margin: 0.3rem 0;
+}
+
+.about .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about footer {
+  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
+          transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.projects {
+  padding-bottom: 2rem;
+}
+
+.projects .bio {
+  height: 30vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg);
+  background-image: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg);
+  background-position: center top;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.projects .bio h1 {
+  color: #ff652f;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.projects-items {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.projects-items .item {
+  position: relative;
+  border-bottom: 5px solid #ff652f;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.projects-items .item img {
+  width: 100%;
+}
+
+.projects-items .item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ff652f;
+  opacity: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.projects-items .item:hover::after {
+  top: 0;
+  opacity: .9;
+}
+
+.projects-items .item:hover .btns a {
+  opacity: 1;
+}
+
+.projects-items .item .btns {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.projects-items .item .btns a {
+  opacity: 0;
+  color: #000;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.projects-items .item .btns a:hover {
+  color: #fff;
+}
+
+.projects .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects footer {
+  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
+          transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.contact {
+  height: 100vh;
+  padding-top: 40vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg);
+  background-image: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg);
+  background-size: cover;
+  background-position: center top;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.contact .social-icons {
+  position: initial;
+  margin-top: 2rem;
+}
+
 body {
   background-color: #272727;
   color: #fff;
@@ -204,6 +438,10 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  color: #ff652f;
+}
+
 /******************
 header
 ******************/
@@ -215,26 +453,26 @@ header {
 }
 
 /******************
-header
+main
 ******************/
 main {
   height: 100%;
   width: 100%;
 }
 
-main div {
+main .social-icons {
   position: fixed;
   bottom: 1rem;
   left: 1rem;
 }
 
-main div a {
+main .social-icons a {
   padding: 0.4rem;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
-main div a:hover {
+main .social-icons a:hover {
   color: #ff652f;
 }
 
@@ -243,7 +481,7 @@ footer {
   position: fixed;
   bottom: 0.4rem;
   right: 1rem;
-  text-align: left;
+  text-align: right;
   padding: 1rem;
   color: #fff;
 }

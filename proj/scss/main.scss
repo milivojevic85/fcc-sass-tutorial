@@ -1,6 +1,9 @@
 @import 'config';
 @import 'home';
 @import 'menu';
+@import 'about';
+@import 'projects';
+@import 'contact';
 
 body {
     background-color: $primary-color;
@@ -16,6 +19,9 @@ a {
     color: set-text-color($primary-color);
     text-decoration: none;
 }
+h2 {
+    color: $secondary-color;
+}
 /******************
 header
 ******************/
@@ -26,12 +32,12 @@ header {
     padding: 1rem;
 }
 /******************
-header
+main
 ******************/
 main {
     height: 100%;
     width: 100%;
-    div {
+    .social-icons {
         position: fixed;
         bottom: 1rem;
         left: 1rem;
@@ -49,7 +55,7 @@ footer {
     position: fixed;
     bottom: 0.4rem;
     right: 1rem;
-    text-align: left;
+    text-align: right;
     padding: 1rem;
     color: set-text-color($primary-color);
 }
